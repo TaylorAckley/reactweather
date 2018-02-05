@@ -1,0 +1,22 @@
+{
+  "name": "reactweather",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "moment": "^2.20.1",
+    "morgan": "^1.9.0",
+    "npm-run-all": "^4.1.2",
+    "r2": "^2.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  },
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server/server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  }
+}
